@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}My Website{% endblock %}</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="{% url 'about' %}">About Us</a></li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+<div class="content">
+{% block content %}
+<!-- Child templates will insert content here -->
+{% endblock %}
+</div>
+<footer>
+<p>&copy; 2024 My Website. Developed by Lawrence journal world.</p>
+</footer>
+</body>
+</html>
